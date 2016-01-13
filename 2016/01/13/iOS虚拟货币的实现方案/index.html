@@ -4,29 +4,29 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Jon Guo&#39;s Blog</title>
+  <title>iOS IAP支付虚拟货币的实现方案 | Jon Guo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="iOS IAP支付虚拟货币的实现方案In-App Pruchase 介绍详细可以参考苹果文档
+  <meta name="description" content="In-App Pruchase 介绍详细可以参考苹果文档
 简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
 
-Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，">
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jon Guo's Blog">
+<meta property="og:title" content="iOS IAP支付虚拟货币的实现方案">
 <meta property="og:url" content="http://guozhicheng.com/2016/01/13/iOS虚拟货币的实现方案/index.html">
 <meta property="og:site_name" content="Jon Guo's Blog">
-<meta property="og:description" content="iOS IAP支付虚拟货币的实现方案In-App Pruchase 介绍详细可以参考苹果文档
+<meta property="og:description" content="In-App Pruchase 介绍详细可以参考苹果文档
 简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
 
-Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，">
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
 <meta property="og:image" content="http://7xq0zs.com1.z0.glb.clouddn.com/QQ20160112-0.png">
 <meta property="og:image" content="http://7xq0zs.com1.z0.glb.clouddn.com/Screen%20Shot%202016-01-12%20at%2022.05.26.png">
-<meta property="og:updated_time" content="2016-01-13T12:55:03.000Z">
+<meta property="og:updated_time" content="2016-01-13T14:08:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jon Guo's Blog">
-<meta name="twitter:description" content="iOS IAP支付虚拟货币的实现方案In-App Pruchase 介绍详细可以参考苹果文档
+<meta name="twitter:title" content="iOS IAP支付虚拟货币的实现方案">
+<meta name="twitter:description" content="In-App Pruchase 介绍详细可以参考苹果文档
 简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
 
-Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，">
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
   
     <link rel="alternative" href="/atom.xml" title="Jon Guo&#39;s Blog" type="application/atom+xml">
   
@@ -179,7 +179,7 @@ Consumbale：这种类型的购买项目，支付之后消费并且可以再次�
   
     <div class="article-meta">
       <a href="/2016/01/13/iOS虚拟货币的实现方案/" class="article-date">
-  	<time datetime="2016-01-13T12:55:03.000Z" itemprop="datePublished">2016-01-13</time>
+  	<time datetime="2016-01-13T14:08:30.000Z" itemprop="datePublished">2016-01-13</time>
 </a>
     </div>
   
@@ -188,9 +188,27 @@ Consumbale：这种类型的购买项目，支付之后消费并且可以再次�
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      iOS IAP支付虚拟货币的实现方案
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="iOS_IAP支付虚拟货币的实现方案">iOS IAP支付虚拟货币的实现方案</h2><h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
+        <h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
 <h4 id="简单介绍如下:">简单介绍如下:</h4><p>苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：</p>
 <ul>
 <li><strong>Consumbale：</strong><br>这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。</li>
@@ -307,7 +325,7 @@ Consumbale：这种类型的购买项目，支付之后消费并且可以再次�
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="iOS虚拟货币的实现方案" data-title="" data-url="http://guozhicheng.com/2016/01/13/iOS虚拟货币的实现方案/"></div>
+	<div class="ds-thread" data-thread-key="iOS虚拟货币的实现方案" data-title="iOS IAP支付虚拟货币的实现方案" data-url="http://guozhicheng.com/2016/01/13/iOS虚拟货币的实现方案/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

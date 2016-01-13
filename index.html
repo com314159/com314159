@@ -169,7 +169,7 @@
   
     <div class="article-meta">
       <a href="/2016/01/13/iOS虚拟货币的实现方案/" class="article-date">
-  	<time datetime="2016-01-13T12:55:03.000Z" itemprop="datePublished">2016-01-13</time>
+  	<time datetime="2016-01-13T14:08:30.000Z" itemprop="datePublished">2016-01-13</time>
 </a>
     </div>
   
@@ -178,9 +178,20 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/13/iOS虚拟货币的实现方案/">iOS IAP支付虚拟货币的实现方案</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="iOS_IAP支付虚拟货币的实现方案">iOS IAP支付虚拟货币的实现方案</h2><h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
+        <h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
 <h4 id="简单介绍如下:">简单介绍如下:</h4><p>苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：</p>
 <ul>
 <li><strong>Consumbale：</strong><br>这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。</li>

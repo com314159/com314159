@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://guozhicheng.com//"/>
-  <updated>2016-01-13T12:55:03.000Z</updated>
+  <updated>2016-01-13T14:08:30.000Z</updated>
   <id>http://guozhicheng.com//</id>
   
   <author>
@@ -16,12 +16,12 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title><![CDATA[iOS IAP支付虚拟货币的实现方案]]></title>
     <link href="http://guozhicheng.com/2016/01/13/iOS%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88/"/>
     <id>http://guozhicheng.com/2016/01/13/iOS虚拟货币的实现方案/</id>
-    <published>2016-01-13T12:55:03.000Z</published>
-    <updated>2016-01-13T12:55:03.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="iOS_IAP支付虚拟货币的实现方案">iOS IAP支付虚拟货币的实现方案</h2><h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
+    <published>2016-01-13T14:08:30.000Z</published>
+    <updated>2016-01-13T14:08:30.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnectInAppPurchase_Guide/Chapters/CreatingInAppPurchaseProducts.html" target="_blank" rel="external">苹果文档</a></p>
 <h4 id="简单介绍如下:">简单介绍如下:</h4><p>苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：</p>
 <ul>
 <li><strong>Consumbale：</strong><br>这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。</li>
@@ -104,7 +104,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="iOS_IAP支付虚拟货币的实现方案">iOS IAP支付虚拟货币的实现方案</h2><h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.ap]]>
+    <![CDATA[<h2 id="In-App_Pruchase_介绍">In-App Pruchase 介绍</h2><p>详细可以参考<a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilitie]]>
     </summary>
     
   </entry>
