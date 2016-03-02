@@ -4,17 +4,29 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Jon Guo&#39;s Blog</title>
+  <title>iOS IAP支付虚拟货币的实现方案 | Jon Guo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jon Guo's Blog">
-<meta property="og:url" content="http://guozhicheng.com/index.html">
+  <meta name="description" content="In-App Pruchase 介绍详细可以参考苹果文档
+简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
+
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS IAP支付虚拟货币的实现方案">
+<meta property="og:url" content="http://guozhicheng.com/2016/01/14/iOS虚拟货币的实现方案/index.html">
 <meta property="og:site_name" content="Jon Guo's Blog">
-<meta property="og:description">
+<meta property="og:description" content="In-App Pruchase 介绍详细可以参考苹果文档
+简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
+
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
+<meta property="og:image" content="http://7xq0zs.com1.z0.glb.clouddn.com/QQ20160112-0.png">
+<meta property="og:image" content="http://7xq0zs.com1.z0.glb.clouddn.com/Screen%20Shot%202016-01-12%20at%2022.05.26.png">
+<meta property="og:updated_time" content="2016-01-14T01:36:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jon Guo's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="iOS IAP支付虚拟货币的实现方案">
+<meta name="twitter:description" content="In-App Pruchase 介绍详细可以参考苹果文档
+简单介绍如下:苹果支付类型分为5种,因为我们的需求是永久出售课程(你可以参考多看),所以不考虑Subscription类型的支付。我们要考虑的是以下两种支付方式：
+
+Consumbale：这种类型的购买项目，支付之后消费并且可以再次支付，跨设备无法通过苹果恢复。支付后的产品只能使用一次，如果需要重新使用，需要重新支付。比如游戏里面的金币。">
   
     <link rel="alternative" href="/atom.xml" title="Jon Guo&#39;s Blog" type="application/atom+xml">
   
@@ -171,9 +183,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-iOS虚拟货币的实现方案" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-iOS虚拟货币的实现方案" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/01/14/iOS虚拟货币的实现方案/" class="article-date">
@@ -189,12 +199,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/14/iOS虚拟货币的实现方案/">iOS IAP支付虚拟货币的实现方案</a>
+    <h1 class="article-title" itemprop="name">
+      iOS IAP支付虚拟货币的实现方案
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/iOS开发/">iOS开发</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -284,33 +305,58 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/iOS开发/">iOS开发</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
   
 </article>
 
 
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="iOS虚拟货币的实现方案" data-title="iOS IAP支付虚拟货币的实现方案" data-url="http://guozhicheng.com/2016/01/14/iOS虚拟货币的实现方案/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"com314159"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-  
-  
+
+
+
 </div>
       <footer id="footer">
   <div class="outer">
@@ -334,8 +380,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
